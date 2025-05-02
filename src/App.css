@@ -1,38 +1,295 @@
-.App {
-  text-align: center;
+/* Modern CSS with enhanced styling */
+:root {
+  --primary-color: #4361ee;
+  --primary-light: #4cc9f0;
+  --primary-dark: #3a0ca3;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --warning-color: #f39c12;
+  --text-color: #2d3436;
+  --bg-color: #f5f7fa;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  color: var(--text-color);
+  line-height: 1.6;
+  background: linear-gradient(135deg, #001660 0%, #c3cfe2 100%);
+  background-attachment: fixed;
+  position: relative;
   min-height: 100vh;
+}
+
+/* Decorative background patterns */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(67, 97, 238, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(76, 201, 240, 0.05) 0%, transparent 50%);
+  background-size: 100% 100%;
+}
+
+.container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 
+              0 1px 3px rgba(0, 0, 0, 0.05),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: linear-gradient(45deg, var(--primary-light), var(--primary-dark));
+  z-index: -1;
+  border-radius: calc(var(--border-radius) + 5px);
+  opacity: 0.1;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-light);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 0.85em;
+  margin-top: 5px;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.success {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: rgba(46, 204, 113, 0.15);
+  color: #155724;
+  border-left: 4px solid var(--success-color);
+  border-radius: var(--border-radius);
+  font-weight: 500;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.success::before {
+  content: '✓';
+  font-size: 18px;
+  margin-right: 10px;
+  color: var(--success-color);
+}
+
+button {
+  padding: 14px;
+  width: 100%;
+  background-color: var(--primary-color);
   color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes App-logo-spin {
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius);
+  opacity: 0;
+}
+
+button:hover:after {
+  opacity: 1;
+  animation: ripple 0.8s ease-out;
+}
+
+@keyframes ripple {
   from {
-    transform: rotate(0deg);
+    transform: scale(0);
+    opacity: 1;
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.strength {
+  font-size: 0.85em;
+  margin-top: 8px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.strength:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.strength.weak {
+  color: var(--error-color);
+}
+
+.strength.weak:before {
+  background-color: var(--error-color);
+}
+
+.strength.moderate {
+  color: var(--warning-color);
+}
+
+.strength.moderate:before {
+  background-color: var(--warning-color);
+}
+
+.strength.strong {
+  color: var(--success-color);
+}
+
+.strength.strong:before {
+  background-color: var(--success-color);
+}
+
+/* Progress bar for password strength */
+.strength-meter {
+  height: 4px;
+  width: 100%;
+  background: #e0e0e0;
+  margin-top: 8px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.strength-meter .meter {
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.strength.weak .meter {
+  width: 33%;
+  background-color: var(--error-color);
+}
+
+.strength.moderate .meter {
+  width: 66%;
+  background-color: var(--warning-color);
+}
+
+.strength.strong .meter {
+  width: 100%;
+  background-color: var(--success-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 20px;
   }
 }
