@@ -1,70 +1,184 @@
-# Getting Started with Create React App
+# 🧾 User Registration Form - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple user registration form built using React for Week 6 Lab Assessment. It features real-time input validation, controlled components, and a success message on valid form submission.
 
-## Available Scripts
+## 🌐 Live Project
+[Live Demo](# 🧾 User Registration Form - React
 
-In the project directory, you can run:
+A simple user registration form built using React for Week 6 Lab Assessment. It features real-time input validation, controlled components, and a success message on valid form submission.
 
-### `npm start`
+## 🌐 Live Project
+[Live Demo](# 🧾 User Registration Form - React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A simple user registration form built using React for Week 6 Lab Assessment. It features real-time input validation, controlled components, and a success message on valid form submission.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌐 Live Project
+[Live Demo](https://your-vercel-deployment.vercel.app)
 
-### `npm test`
+## 📁 GitHub Repository
+[GitHub Repo](https://github.com/YOUR_USERNAME/registration-form)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Technologies Used
+- React (Functional Components)
+- useState Hook for state management
+- CSS for styling
+- Vercel for deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✅ Features
+- Real-time validation on:
+  - Name
+  - Email (format check)
+  - Password (min 6 characters)
+  - Confirm Password (must match)
+- Controlled components for all inputs
+- Submit button disabled until form is valid
+- Success message after valid form submission
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Form Validation & State Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Validation
+- Form inputs are validated in real-time using simple JavaScript logic.
+- Errors are displayed immediately below each field if invalid.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### State Management
+- All form fields and error states are managed using React's `useState` hook.
+- Form submission checks all fields again before showing the success message.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📬 Author
+Jim Carlo Bagoncia
+# 🧾 User Registration Form - React
 
-## Learn More
+A simple user registration form built using React for Week 6 Lab Assessment. It features real-time input validation, controlled components, and a success message on valid form submission.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🌐 Live Project
+[Live Demo](https://your-vercel-deployment.vercel.app)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 GitHub Repository
+[GitHub Repo](https://github.com/YOUR_USERNAME/registration-form)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠 Technologies Used
+- React (Functional Components)
+- useState Hook for state management
+- CSS for styling
+- Vercel for deployment
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✅ Features
+- Real-time validation on:
+  - Name
+  - Email (format check)
+  - Password (min 6 characters)
+  - Confirm Password (must match)
+- Controlled components for all inputs
+- Submit button disabled until form is valid
+- Success message after valid form submission
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ Form Validation & State Management
 
-### Advanced Configuration
+### Validation
+- Form inputs are validated in real-time using simple JavaScript logic.
+- Errors are displayed immediately below each field if invalid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### State Management
+- All form fields and error states are managed using React's `useState` hook.
+- Form submission checks all fields again before showing the success message.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📬 Author
+Jim Carlo Bagoncia
+)
 
-### `npm run build` fails to minify
+## 📁 GitHub Repository
+[GitHub Repo](https://github.com/YOUR_USERNAME/registration-form)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🛠 Technologies Used
+- React (Functional Components)
+- useState Hook for state management
+- CSS for styling
+- Vercel for deployment
+
+---
+
+## ✅ Features
+- Real-time validation on:
+  - Name
+  - Email (format check)
+  - Password (min 6 characters)
+  - Confirm Password (must match)
+- Controlled components for all inputs
+- Submit button disabled until form is valid
+- Success message after valid form submission
+
+---
+
+## ⚙️ Form Validation & State Management
+
+### Validation
+- Form inputs are validated in real-time using simple JavaScript logic.
+- Errors are displayed immediately below each field if invalid.
+
+### State Management
+- All form fields and error states are managed using React's `useState` hook.
+- Form submission checks all fields again before showing the success message.
+
+---
+
+## 📬 Author
+Jim Carlo Bagoncia
+)
+
+## 📁 GitHub Repository
+[GitHub Repo](https://github.com/YOUR_USERNAME/registration-form)
+
+---
+
+## 🛠 Technologies Used
+- React (Functional Components)
+- useState Hook for state management
+- CSS for styling
+- Vercel for deployment
+
+---
+
+## ✅ Features
+- Real-time validation on:
+  - Name
+  - Email (format check)
+  - Password (min 6 characters)
+  - Confirm Password (must match)
+- Controlled components for all inputs
+- Submit button disabled until form is valid
+- Success message after valid form submission
+
+---
+
+## ⚙️ Form Validation & State Management
+
+### Validation
+- Form inputs are validated in real-time using simple JavaScript logic.
+- Errors are displayed immediately below each field if invalid.
+
+### State Management
+- All form fields and error states are managed using React's `useState` hook.
+- Form submission checks all fields again before showing the success message.
+
+---
+
+## 📬 Author
+Jim Carlo Bagoncia
