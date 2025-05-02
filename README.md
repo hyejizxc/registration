@@ -16,7 +16,7 @@ A simple user registration form built using React for Week 6 Lab Assessment. It 
 [Live Demo](registration-nu-lilac.vercel.app)
 
 ## 📁 GitHub Repository
-[GitHub Repo](https://github.com/YOUR_USERNAME/registration-form)
+[GitHub Repo]([https://github.com/hyejizxc/registration.git)
 
 ---
 
