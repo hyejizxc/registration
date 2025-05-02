@@ -3,8 +3,8 @@
 A simple user registration form built using React for Week 6 Lab Assessment. It features real-time input validation, controlled components, and a success message on valid form submission.
 
 ## 🌐 Live Project
-[Live Demo](registration-nu-lilac.vercel.app)
 
+https://registration-nu-lilac.vercel.app
 ---
 
 ## 🛠 Technologies Used
